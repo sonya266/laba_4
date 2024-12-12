@@ -1,0 +1,173 @@
+\hypertarget{classAlphaCipher}{}\doxysection{Класс Alpha\+Cipher}
+\label{classAlphaCipher}\index{AlphaCipher@{AlphaCipher}}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAlphaCipher_adcd6cf85fb06b03a0a93f9b3998bebd9}\label{classAlphaCipher_adcd6cf85fb06b03a0a93f9b3998bebd9}} 
+{\bfseries Alpha\+Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет конструктора по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlphaCipher_a8c5b926b9ff65f6d97edd93d3722c230}{Alpha\+Cipher}} (const std\+::wstring \&key\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classAlphaCipher}{Alpha\+Cipher}}. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classAlphaCipher_ad694636e44476de828bfec81e6ae3a4d}{encrypt}} (const std\+::wstring \&text)
+\begin{DoxyCompactList}\small\item\em Шифрует открытый текст. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classAlphaCipher_aad2e1b94f1e9d3fee5b7440655ca9ddd}{decrypt}} (const std\+::wstring \&encrypted\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Расшифровывает зашифрованный текст. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAlphaCipher_af32b304d17d1a56863740328fb7686c9}{get\+Valid\+Key}} (const std\+::wstring \&key\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает действительный ключ шифрования. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classAlphaCipher_a415cb00a7c81d2d2894b62b138b11356}{get\+Valid\+Open\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает действительный открытый текст для шифрования. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classAlphaCipher_ad6919691fb586ee284a592d73668521c}{get\+Valid\+Cipher\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет и возвращает действительный зашифрованный текст для расшифровки. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classAlphaCipher_a8c5b926b9ff65f6d97edd93d3722c230}\label{classAlphaCipher_a8c5b926b9ff65f6d97edd93d3722c230}} 
+\index{AlphaCipher@{AlphaCipher}!AlphaCipher@{AlphaCipher}}
+\index{AlphaCipher@{AlphaCipher}!AlphaCipher@{AlphaCipher}}
+\doxysubsubsection{\texorpdfstring{AlphaCipher()}{AlphaCipher()}}
+{\footnotesize\ttfamily Alpha\+Cipher\+::\+Alpha\+Cipher (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classAlphaCipher}{Alpha\+Cipher}}. 
+
+Инициализирует объект шифрования с заданным ключом.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key\+\_\+str} & Строка, представляющая ключ шифрования. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Исключение, если ключ недействителен. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classAlphaCipher_aad2e1b94f1e9d3fee5b7440655ca9ddd}\label{classAlphaCipher_aad2e1b94f1e9d3fee5b7440655ca9ddd}} 
+\index{AlphaCipher@{AlphaCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!AlphaCipher@{AlphaCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring Alpha\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{encrypted\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Расшифровывает зашифрованный текст. 
+
+Дешифрует переданный зашифрованный текст с использованием установленного ключа.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em encrypted\+\_\+text} & Зашифрованный текст для расшифровки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Открытый текст. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlphaCipher_ad694636e44476de828bfec81e6ae3a4d}\label{classAlphaCipher_ad694636e44476de828bfec81e6ae3a4d}} 
+\index{AlphaCipher@{AlphaCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!AlphaCipher@{AlphaCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring Alpha\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Шифрует открытый текст. 
+
+Зашифровывает переданный текст с использованием установленного ключа.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Открытый текст для шифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Исключение, если длина ключа превышает половину длины текста. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classAlphaCipher_ad6919691fb586ee284a592d73668521c}\label{classAlphaCipher_ad6919691fb586ee284a592d73668521c}} 
+\index{AlphaCipher@{AlphaCipher}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!AlphaCipher@{AlphaCipher}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily std\+::wstring Alpha\+Cipher\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет и возвращает действительный зашифрованный текст для расшифровки. 
+
+Удаляет недопустимые символы и проверяет на наличие звёздочек.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Зашифрованный текст для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Проверенный зашифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Исключение, если зашифрованный текст пуст или содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classAlphaCipher_af32b304d17d1a56863740328fb7686c9}\label{classAlphaCipher_af32b304d17d1a56863740328fb7686c9}} 
+\index{AlphaCipher@{AlphaCipher}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!AlphaCipher@{AlphaCipher}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int Alpha\+Cipher\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Проверяет и возвращает действительный ключ шифрования. 
+
+Проверяет, что ключ состоит только из цифр и больше нуля.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key\+\_\+str} & Строка, представляющая ключ шифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Проверенный ключ. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Исключение, если ключ недействителен или пуст. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classAlphaCipher_a415cb00a7c81d2d2894b62b138b11356}\label{classAlphaCipher_a415cb00a7c81d2d2894b62b138b11356}} 
+\index{AlphaCipher@{AlphaCipher}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!AlphaCipher@{AlphaCipher}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily std\+::wstring Alpha\+Cipher\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет и возвращает действительный открытый текст для шифрования. 
+
+Удаляет недопустимые символы и преобразует текст в верхний регистр.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Открытый текст для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Проверенный открытый текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Исключение, если открытый текст пуст или содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\end{DoxyCompactItemize}
